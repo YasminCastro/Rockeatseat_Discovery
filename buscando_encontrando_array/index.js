@@ -73,7 +73,7 @@ contarAutores();
 
 //Mostrar livros do autor Auguto Cury
 //Transformar a função acima em uma função que irá receber o nome do autor e devolver os livros desse autor.
-function booksOfAugusto(author) {
+function booksOfAuthor(author) {
   let books = [];
 
   for (let category of booksByCategory) {
@@ -83,7 +83,7 @@ function booksOfAugusto(author) {
       }
     }
   }
-  console.log(`Livros do autor : ${books}`);
+  console.log(`Livros do autor : ${books.join(", ")}`);
 }
 
-booksOfAugusto("George S. Clason");
+booksOfAuthor("Augusto Cury");
