@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header" "main aside" "footer footer";
+  font-family: "Roboto", sans-serif;
+  grid-template-columns: 1fr 25%;
+  grid-template-rows: 1fr 40vh 1fr;
+}
+
+header {
+  background-color: lightgrey;
+  grid-area: header;
+  padding: 0.5rem;
+}
+
+main {
+  grid-area: main;
+  border: 1px solid;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+aside {
+  grid-area: aside;
+  border: 1px solid;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+footer {
+  background-color: indianred;
+  grid-area: footer;
+}
+
+.logo {
+  width: 70px;
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  list-style: none;
+  font-size: 14px;
+  margin-right: 2rem;
+}
+
+ul :last-child {
+  background-color: lightskyblue;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
